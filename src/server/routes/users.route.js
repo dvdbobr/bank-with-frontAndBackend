@@ -9,16 +9,12 @@ router.get('/', (req, res) => {
    userController.createUser(req, res);
 }).get('/findById/:id', (req, res) => {
    userController.getUserById(req, res);
-// }).get('/getActive', (req, res) => {
-//    userController.getActive(req, res);
-// }).get('/getPriceRange', (req, res) => {
-//    userController.getRange(req, res);
-// }).patch('/patchById/:id', (req, res) => {
-//    userController.updateUserById(req, res);
-// }).delete('/deleteById/:id', (req, res) => {
-//    userController.deleteUserById(req, res);
-// }).delete('/delete', (req, res) => {
-//    userController.deleteUsers(req, res);
+}).get('/getActive', (req, res) => {
+   userController.getActive(req, res);
+}).get('/getUsersByCashRange', (req, res) => {
+   userController.getUsersByCashRange(req, res);
+}).put('/updateCreditById/:id', (req, res) => {
+   userController.updateCreditById(req, res);
 })
 
 

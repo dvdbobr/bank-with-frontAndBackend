@@ -1,0 +1,18 @@
+.card {
+    border: 2px solid #fff;
+    width: 310px;
+    height: 290px;
+    padding: 26px;
+    font-size: 1.6rem;
+}
+
+.card p {
+    margin: 1rem 0
+}
+
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin:2rem 2rem;
+}
